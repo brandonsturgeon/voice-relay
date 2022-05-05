@@ -1,13 +1,13 @@
-version: '3'
+version: '3.8'
 services:  
   node:
     image: node:14-stretch
     volumes:
       - .:/data
-    command: bash -c 'cd /data && npm install && node /data/server.js'
+    command: bash -c 'cd /data && yarn install && node /data/server.js'
     restart: always
     ports:
       - 127.0.0.1:4000:4000/udp
+      - 127.0.0.1:9090:9090/tcp
     environment:
-      DISCORD_TOKEN: 
-      CHANNEL_ID: 
+      - .env

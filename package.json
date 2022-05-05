@@ -10,10 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-transcribe-streaming": "^3.82.0",
     "@discordjs/opus": "github:Meachamp/opus",
-    "audio-mixer": "github:Meachamp/Audio-Mixer",
-    "discord.js": "^12.2.0",
-    "node-cron": "^2.0.3",
-    "prism-media": "^1.2.2"
+    "prism-media": "^1.2.2",
+    "ws": "^8.6.0"
   }
 }
